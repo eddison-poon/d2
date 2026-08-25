@@ -1,0 +1,52 @@
+{
+  "definition": {
+    "performance_test_id": "3827",
+    "performance_scenario_id": "PS-3827-01",
+    "jira_key": "ETIVAI-13864",
+    "title": "Flagship use-case baseline (1/3 volume)",
+    "objective": "Validate that a dedicated tenant can sustain the peak workload while meeting the required end-to-end completion target."
+  },
+  "execution": {
+    "performance_execution_id": "PERF-3827-20260826005449",
+    "performance_test_id": "3827",
+    "stream_id": "tenant-based-runtime",
+    "release_id": "sandbox-1.0.5",
+    "build": "1.0.5",
+    "executed_at": "2026-08-26T00:54:49+08:00",
+    "executed_by": "eddison",
+    "assessment": "PASSED",
+    "workload": {
+      "concurrent_users": 100,
+      "target_transactions": 3000,
+      "duration": "1 hour"
+    },
+    "results": {
+      "attempted_transactions": 3022,
+      "passed_transactions": 3022,
+      "failed_transactions": 0,
+      "transaction_pass_rate_percent": 100.0,
+      "transaction_failure_rate_percent": 0.0,
+      "p95_completion": "60 sec"
+    },
+    "environment": {
+      "name": "SIT",
+      "tenant": "SDLC-Agent-UC4538647",
+      "task_type": "DeepAgent"
+    },
+    "hardware_utilization": [
+      {
+        "component": "Agent Runtime",
+        "metrics": {
+          "cpu_peak_percent": 3.84
+        }
+      },
+      {
+        "component": "Executor AutoGen",
+        "metrics": {
+          "cpu_peak_percent": 30
+        }
+      }
+    ],
+    "notes": ""
+  }
+}
