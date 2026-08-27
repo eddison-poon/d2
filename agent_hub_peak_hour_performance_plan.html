@@ -15,16 +15,29 @@
 .people{font-size:19px;color:var(--navy);margin:5px 0;white-space:nowrap}.footer{margin-top:12px;text-align:right;font-size:10px;color:#98a2b3}
 @media(max-width:850px){.metrics,.timeline,.two,.types{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:30px}}@media(max-width:550px){.metrics,.timeline,.two,.types{grid-template-columns:1fr}.page{padding:12px}}
 </style></head><body><div class="page">
-<header class="hero"><h1>Agent Hub Peak-Hour Performance Validation Plan</h1><p>Capacity validation from regional demand assumptions to flagship use-case workload and multi-tenant isolation.</p></header>
-<div class="st">Demand & Capacity Context</div><section class="metrics">
-<div class="metric"><div class="label">Global Registered Users</div><div class="value">270,000</div><div class="sub">Global population</div></div>
-<div class="metric"><div class="label">Global Peak Active Users</div><div class="value">81,000</div><div class="sub">30% of registered users</div></div>
-<div class="metric"><div class="label">Regional Registered Users</div><div class="value">50,000</div><div class="sub">Target region</div></div>
-<div class="metric"><div class="label">Regional Peak Active Users</div><div class="value">15,000</div><div class="sub">30% of regional users</div></div></section>
-<div class="st">Regional Peak-Hour Workload Derivation</div><section class="flow">
-<div class="flowbox"><b>15,000 Active Regional Users</b><span>Peak-hour active population</span></div><div class="arrow">→</div>
-<div class="flowbox"><b>1 Agent Task / 2 Minutes</b><span><strong>Agent Task = Plan → Execute → Response</strong><br>30 tasks per active user per hour</span></div><div class="arrow">→</div>
-<div class="flowbox"><b>450,000 Agent Tasks / Hour</b><span>Estimated regional peak-hour demand</span></div></section>
+<header class="hero"><h1>Agent Hub Peak-Hour Performance Validation Plan</h1><p>Capacity validation from enterprise demand assumptions to time-zone workload, average-hour baseline and peak multi-tenant validation.</p></header>
+<div class="st">Demand & Capacity Context</div>
+<section class="metrics">
+<div class="metric"><div class="label">Total Eligible Users</div><div class="value">270,000</div><div class="sub">Enterprise population</div></div>
+<div class="metric"><div class="label">Highly Active Users</div><div class="value">67,500</div><div class="sub">25% of eligible users</div></div>
+<div class="metric"><div class="label">Highly Active Users / Time Zone</div><div class="value">22,500</div><div class="sub">Per time zone</div></div>
+<div class="metric"><div class="label">Weekly Tasks Generated / Time Zone</div><div class="value">285,000</div><div class="sub">Agent tasks per week / time zone</div></div>
+</section>
+
+<div class="st">Time Zone Demand</div>
+<section class="metrics">
+<div class="metric"><div class="label">Users / Day</div><div class="value">7,500</div><div class="sub">Per time zone</div></div>
+<div class="metric"><div class="label">Tasks / Day</div><div class="value">95,000</div><div class="sub">Generated per time zone</div></div>
+<div class="metric"><div class="label">Users / Hour</div><div class="value">1,000</div><div class="sub">Average hourly demand</div></div>
+<div class="metric"><div class="label">Tasks / Hour</div><div class="value">12,000</div><div class="sub">Average hourly workload</div></div>
+</section>
+
+<div class="formula"><b>Peak Load:</b> Defined as <b>Average × 2</b>. The average-hour baseline of <b>1,000 users / 12,000 tasks per hour</b> is validated through Objective 1, while the multi-tenant workload in Objective 2 validates the combined peak demand.</div>
+
+<div class="st">Agent Workload Model</div><section class="flow">
+<div class="flowbox"><b>1,000 Users / Average Hour</b><span>Average hourly baseline within one time zone</span></div><div class="arrow">→</div>
+<div class="flowbox"><b>1 Agent Task / 5 Minutes</b><span><strong>Agent Task = Plan → Execute → Response</strong><br>Controlled Agent Hub workload model</span></div><div class="arrow">→</div>
+<div class="flowbox"><b>12,000 Agent Tasks / Hour</b><span>Single-tenant average-hour baseline</span></div></section>
 
 <div class="st">Agent Task Type</div>
 <div class="types-wrap"><section class="types">
@@ -32,17 +45,16 @@
 <div class="typebox"><h3>ARK</h3><ul><li>Agent Hub regular runtime controller</li></ul></div>
 </section></div>
 
-<div class="formula"><b>Flagship Use Case:</b> 2% of regional population = <b>1,000 registered users</b> → 30% peak activity = <b>300 concurrent active users</b> → <b>9,000 agent tasks/hour</b>.</div>
 <div class="st">Performance Objectives</div><section class="two">
-<article class="card"><h3>Objective 1 — Flagship Use-Case Baseline</h3><p>Validate that a dedicated tenant can sustain the flagship use-case peak workload while meeting the required end-to-end completion target.</p>
-<div class="pills"><span class="pill">9,000 tasks/hour</span><span class="pill">300 concurrent users</span><span class="pill">Completion &lt; 120 sec</span></div><div class="deepagent">DeepAgent</div></article>
-<article class="card"><h3>Objective 2 — Multi-Tenant Isolation</h3><p>Run the Objective 1 workload concurrently on two separate tenants within the same region to demonstrate tenant isolation under peak demand.</p>
-<div class="pills"><span class="pill">2 tenants</span><span class="pill">Same regional environment</span><span class="pill">No material cross-tenant interference</span></div><div class="deepagent">DeepAgent</div>
-<p style="margin-top:10px">Success means each tenant maintains its expected workload and completion-time target without material degradation caused by the other tenant.</p></article></section>
+<article class="card"><h3>Objective 1 — Single-Tenant Baseline</h3><p>Validate that a dedicated tenant can sustain the average-hour workload while meeting the required end-to-end Agent Task completion target.</p>
+<div class="pills"><span class="pill">12,000 tasks/hour</span><span class="pill">1,000 concurrent users</span><span class="pill">Completion &lt; 600 sec</span></div><div class="deepagent">DeepAgent</div></article>
+<article class="card"><h3>Objective 2 — Multi-Tenant Peak Validation</h3><p>Run the Objective 1 workload concurrently on two tenants within the same region to validate tenant isolation and the peak-load assumption of Average × 2.</p>
+<div class="pills"><span class="pill">2 tenants</span><span class="pill">24,000 tasks/hour combined</span><span class="pill">2,000 concurrent users combined</span><span class="pill">Peak = Average × 2</span></div><div class="deepagent">DeepAgent</div>
+<p style="margin-top:10px">Success means both tenants maintain the required workload and completion target without material cross-tenant performance interference.</p></article></section>
 
 <div class="st">Delivery Milestones</div><section class="timeline">
-<div class="mile"><div class="num">Milestone 1</div><h4>Single Tenant 1/3 Baseline Volume</h4><div class="people">👤</div><div class="date">Aug 17–21</div><div class="detail"><b>3,000 tasks/hour</b><br>100 concurrent users<br>Establish initial workload behaviour.</div></div>
-<div class="mile"><div class="num">Milestone 2</div><h4>Single Tenant 2/3 Baseline Volume</h4><div class="people">👤👤</div><div class="date">Aug 24–28</div><div class="detail"><b>6,000 tasks/hour</b><br>200 concurrent users<br>Validate performance as load increases.</div></div>
-<div class="mile"><div class="num">Milestone 3</div><h4>Single Tenant Full Baseline Volume</h4><div class="people">👤👤👤</div><div class="date">Aug 31–Sep 4</div><div class="detail"><b>9,000 tasks/hour</b><br>300 concurrent users<br>Validate Objective 1 at peak target.</div></div>
-<div class="mile"><div class="num">Milestone 4</div><h4>Multi-Tenant Validation</h4><div class="people">👤👤👤👤👤👤</div><div class="date">Sep 7–18</div><div class="detail"><b>Objective 2</b><br>2 tenants × 300 concurrent users<br><b>9,000 tasks/hour per tenant</b><br>Assess cross-tenant impact.</div></div>
+<div class="mile"><div class="num">Milestone 1</div><h4>Single Tenant 1/3 Baseline Volume</h4><div class="people">👤</div><div class="detail"><b>4,000 tasks/hour</b><br>~333 concurrent users<br>Establish initial workload behaviour.</div></div>
+<div class="mile"><div class="num">Milestone 2</div><h4>Single Tenant 2/3 Baseline Volume</h4><div class="people">👤👤</div><div class="detail"><b>8,000 tasks/hour</b><br>~667 concurrent users<br>Validate performance as load increases.</div></div>
+<div class="mile"><div class="num">Milestone 3</div><h4>Single Tenant Full Baseline Volume</h4><div class="people">👤👤👤</div><div class="detail"><b>12,000 tasks/hour</b><br>1,000 concurrent users<br>Validate Objective 1 at average-hour baseline.</div></div>
+<div class="mile"><div class="num">Milestone 4</div><h4>Multi-Tenant Peak Validation</h4><div class="people">👤👤👤👤👤👤</div><div class="detail"><b>Objective 2</b><br>2 tenants × 1,000 concurrent users<br><b>12,000 tasks/hour per tenant</b><br><b>24,000 tasks/hour combined</b><br>Validate peak load and tenant isolation.</div></div>
 </section><div class="footer">Agent Hub Performance Testing • One-Page Management View</div></div></body></html>
