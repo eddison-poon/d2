@@ -25,65 +25,37 @@
 
     <section class="tab-panel active" id="releaseTab">
       <div class="section-title-row">
-        <div>
-          <p class="eyebrow dark">Release Focus</p>
-          <h2>Release Testing Overview</h2>
-        </div>
+        <div><p class="eyebrow dark">Release Focus</p><h2>Release Testing Overview</h2></div>
         <button class="ghost-button" id="refreshButton">Refresh data</button>
       </div>
-
       <section class="context-bar" aria-label="Selected release context">
         <label><span>Release Stream</span><select id="streamSelect"></select></label>
         <label><span>Release</span><select id="releaseSelect"></select></label>
         <label><span>Build</span><select id="buildSelect"></select></label>
         <div class="context-note"><span>Current scope</span><strong id="scopeCount">—</strong></div>
       </section>
-
       <section class="kpi-grid" id="kpiGrid"></section>
-
       <section class="progress-card" id="executionProgress"></section>
-
-      <section class="environment-card">
-        <div class="subheading-row">
-          <div><p class="eyebrow dark">Release Gate</p><h3>Environment Status</h3></div>
-          <span class="muted">Pass rate is calculated from completed Manual scenarios in each environment</span>
-        </div>
-        <div class="environment-grid" id="environmentGrid"></div>
-      </section>
-
-      <section class="explorer-shell release-explorer">
-        <aside class="navigator-panel">
-          <div class="panel-heading">
-            <div><p class="eyebrow dark">Navigator</p><h3>Release Items</h3></div>
-            <span class="count-pill" id="releaseItemCount">0</span>
-          </div>
-          <div class="search-wrap"><input id="releaseSearch" type="search" placeholder="Search Jira key or summary…"></div>
-          <div class="release-items" id="releaseItems"></div>
-        </aside>
-
-        <section class="detail-panel" id="releaseDetail"></section>
-      </section>
+      <section class="environment-card"><div class="subheading-row"><div><p class="eyebrow dark">Release Gate</p><h3>Environment Status</h3></div><span class="muted">Pass rate is calculated from completed Manual scenarios in each environment</span></div><div class="environment-grid" id="environmentGrid"></div></section>
+      <section class="explorer-shell release-explorer"><aside class="navigator-panel"><div class="panel-heading"><div><p class="eyebrow dark">Navigator</p><h3>Release Items</h3></div><span class="count-pill" id="releaseItemCount">0</span></div><div class="search-wrap"><input id="releaseSearch" type="search" placeholder="Search Jira key or summary…"></div><div class="release-items" id="releaseItems"></div></aside><section class="detail-panel" id="releaseDetail"></section></section>
     </section>
 
-    <section class="tab-panel" id="regressionTab">
-      <div class="placeholder-shell">
-        <p class="eyebrow dark">Regression / Automation</p>
-        <h2>Capability Explorer</h2>
-        <p>This tab will retain the Capability Explorer interaction model and focus only on automation/regression coverage. Automation is a supporting signal and does not gate release readiness.</p>
-        <div class="placeholder-grid"><div>Capability coverage</div><div>Feature automation status</div><div>Scenario regression status by environment</div></div>
-      </div>
-    </section>
+    <section class="tab-panel" id="regressionTab"><div class="placeholder-shell"><p class="eyebrow dark">Regression / Automation</p><h2>Capability Explorer</h2><p>This tab will retain the Capability Explorer interaction model and focus only on automation/regression coverage. Automation is a supporting signal and does not gate release readiness.</p><div class="placeholder-grid"><div>Capability coverage</div><div>Feature automation status</div><div>Scenario regression status by environment</div></div></div></section>
 
     <section class="tab-panel" id="performanceTab">
       <div class="placeholder-shell">
         <p class="eyebrow dark">Performance Testing</p>
-        <h2>Release Performance View</h2>
-        <p>This tab will use the same Release Stream → Release → Build context and display only performance results belonging to that selection.</p>
-        <div class="placeholder-grid"><div>Latency / P95</div><div>TPS / Throughput</div><div>Error Rate / Peak Users</div></div>
+        <h2>Performance Test Reports</h2>
+        <p>Published management views for Agent Hub performance planning, SOW budget and latest DEV execution results.</p>
+        <div class="placeholder-grid">
+          <div><strong>SOW Test Result — DEV</strong><br><br><a href="sow_test_result.xml">Open latest execution result</a></div>
+          <div><strong>SOW Budget Plan</strong><br><br><a href="agent_hub_sow_budget_plan.xml">Open budget plan</a></div>
+          <div><strong>Peak-Hour Performance Plan</strong><br><br><a href="agent_hub_peak_hour_performance_plan.html">Open validation plan</a></div>
+        </div>
+        <p style="margin-top:18px"><a href="performance_reports.html">Open standalone Performance Report Hub →</a></p>
       </div>
     </section>
   </main>
-
   <script src="assets/js/dashboard.js" defer></script>
 </body>
 </html>
