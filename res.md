@@ -1,8 +1,9 @@
-### scenario 3 - milestone 1 Results
-
-| concurrent execution  | num of files | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
-|---:|---:|---:|---:|---:|---:|---|
-| 25 | 8 (10MB)| 159 | 0 | | 244.24 | 341.15|
+### scenario 1 - milestone 3 Results
+sept 14, SIT
+| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---|
+| 1000 | 2194 | 3144 | | 12.27 | 31.64 |
+| 750 | 3483 | 2344 | | 7.32 | 8.82 |
 
 ### scenario 2 - milestone 1 Results
 sept 3, SIT
@@ -12,23 +13,12 @@ sept 3, SIT
 | 25 | 10 (10MB)| 139 | 9 | | 238.02 | 414.66 |
 | 25 | 10 (10MB)| 9 | 18  | | 418.83 | 561.47 |
 
-sept 4, SIT
+### scenario 3 - milestone 2 Results
+sept 14, SIT
 | concurrent execution  | num of files | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---:|---|
-| 25 | 10 (10MB)| 130 | 16 | | 308.23 | 453.15 |
-| 25 | 10 (10MB)| 123 | 37 | | 270.40  | 386.47 |
-| 25 | 10 (10MB)| 138 | 3 | | 290.41 | 441.94 |
-| 25 | 8 (10MB)| 154 | 15 | | 215.06  | 269.00 |
-| 25 | 8 (10MB)| 166 | 0 | | 227.93  | 171.99 |
+| 100 | 8 (10MB)| 29 | 172 | | 411.19 | 607.49 |
+| 50 | 8 (10MB)| 91 | 196 | | 357.48 | 624.84 |
+| 100 | 8 (10MB)| 50 | 34 | | 361.02 | 498.01 |
 
-### scenario 1 - milestone 1 Results
 
-| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
-|---:|---:|---:|---:|---:|---|
-| 333 | 4020 | 0 | | 5.04 | 5.66|
-
-### scenario 1 - milestone 2 Results
-
-| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
-|---:|---:|---:|---:|---:|---|
-| 667 | 8000 | 0 | | 6.27 | 7.75|
