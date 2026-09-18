@@ -21,11 +21,8 @@ sept 3, SIT
 | 100 | 10 (10MB)| 479 | 22  | | 322.61 | 405.94 |
 
 ### scenario 3 - milestone 2 Results
-sept 14, SIT
+sept 17, SIT
 | concurrent execution  | num of files | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---:|---|
-| 100 | 8 (10MB)| 29 | 172 | | 411.19 | 607.49 |
-| 50 | 8 (10MB)| 91 | 196 | | 357.48 | 624.84 |
-| 100 | 8 (10MB)| 50 | 34 | | 361.02 | 498.01 |
-
+| 100 | 8 (10MB)| 262 | 14 | | 244.39 | 312.71 |
 
