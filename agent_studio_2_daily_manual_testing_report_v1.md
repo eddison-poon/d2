@@ -14,6 +14,10 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Tenant Management 2.0 | Project Creation | 100% | — | 5 | 2 | 2 | 1 | 0 | 10 |
 | Tenant Management 2.0 | Space | 100% | — | 2 | 2 | 1 | 0 | 0 | 5 |
+| Tenant Management 2.0 | Space | EX-PAT-001 | Low Risk Pattern exists/identifiable | Authorized pattern viewer/admin |
+| Tenant Management 2.0 | Space | EX-PAT-002 | SDLC Pattern exists/identifiable | Authorized pattern viewer/admin |
+| Tenant Management 2.0 | Space | EX-PAT-003 | Pattern rule persists/inherits | Authorized governance setup |
+| Tenant Management 2.0 | Space | EX-PAT-004 | Pattern rule remains effective | Space Designer runtime |
 | Tenant Management 2.0 | Agent | 100% | — | 5 | 5 | 16 | 20 | 3 | 49 |
 | Tenant Management 2.0 | Project Creation Pipeline + NS Creation | 0% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | Knowledge Base | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -150,19 +154,15 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 
 ## Executions Not Yet Identified to a Development Feature
 
-These executions are intentionally left unmapped for review rather than forcing them into a feature by keyword similarity.
+These executions are intentionally left unmapped. They are reserved for a possible future Regression section rather than being forced into the current development-feature structure.
 
 | Test Case ID | Test Case Title | Role | Parent MTD | Parent MTD Title |
 |---|---|---|---|---|
-| EX-PAT-001 | Low Risk Pattern exists/identifiable | Authorized pattern viewer/admin | MTD-PAT-001 | Verify required Patterns exist and are assignable |
-| EX-PAT-002 | SDLC Pattern exists/identifiable | Authorized pattern viewer/admin | MTD-PAT-001 | Verify required Patterns exist and are assignable |
-| EX-PAT-003 | Pattern rule persists/inherits | Authorized governance setup | MTD-PAT-002 | Verify shared Pattern rules govern downstream behaviour |
-| EX-PAT-004 | Pattern rule remains effective | Space Designer runtime | MTD-PAT-002 | Verify shared Pattern rules govern downstream behaviour |
 | EX-E2E-001 | Governed Build-to-Run | Governed role chain | MTD-E2E-001 | Governed agent build and consumption |
 | EX-E2E-002 | Runtime Source-to-Artifact | Space User + isolation user | MTD-E2E-002 | Runtime with personal source and generated artifact |
 
-**Mapped executions:** 105  
-**Unidentified executions:** 6  
+**Mapped executions:** 109  
+**Unidentified executions:** 2  
 **Total executions reviewed:** 111
 
 ## Mapping Rules
