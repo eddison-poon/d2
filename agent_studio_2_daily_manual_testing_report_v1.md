@@ -12,29 +12,29 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 
 | Category | Feature | Development Completion | Testing Completion | Tenant Owner | Space Owner | Agent Creator | Space User | Other | Total Cases |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tenant Management 2.0 | Project Creation | 100% | — | 5 | 2 | 2 | 1 | 0 | 10 |
-| Tenant Management 2.0 | Space | 100% | — | 2 | 2 | 1 | 0 | 0 | 5 |
-| Tenant Management 2.0 | Agent | 100% | — | 5 | 3 | 16 | 20 | 3 | 47 |
-| Tenant Management 2.0 | Project Creation Pipeline + NS Creation | 0% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Knowledge Base | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | User Role | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Member Management | 80% | — | 1 | 3 | 1 | 1 | 2 | 8 |
-| Agent Execution | Case1: Simple Agent Execution | 100% | — | 1 | 1 | 2 | 3 | 3 | 10 |
-| Agent Execution | Case2: Agent + MCP tool | 100% | — | 0 | 1 | 5 | 0 | 0 | 6 |
-| Agent Execution | Case3: Agent + Knowledge base | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Case4: Agent + File input & output | 90% | — | 0 | 0 | 1 | 3 | 1 | 5 |
-| Agent Execution | Case5: Natural Language to Agent | 90% | — | 0 | 0 | 2 | 0 | 0 | 2 |
-| Agent Execution | Case6: Agent HITL | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Case7: Agent + Memory (both short term + long term) | 20% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Case8: Agent + Skill | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | LLM Gateway 1.0 | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Gateway 2.0 | 50% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Streaming | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Execution | Agent Harness Framework | 90% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Workspace | Sources Management | 0% | — | 0 | 0 | 1 | 6 | 1 | 8 |
-| Workspace | Session input | 0% | — | 0 | 0 | 1 | 3 | 0 | 4 |
-| Agentic Workflow | — | 0% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Agent Monitoring & Evaluation | — | 0% | — | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tenant Management 2.0 | Project Creation | 100% | 50% | 5 | 2 | 2 | 1 | 0 | 10 |
+| Tenant Management 2.0 | Space | 100% | 11% | 2 | 2 | 1 | 0 | 0 | 5 |
+| Tenant Management 2.0 | Agent | 100% | 64% | 5 | 3 | 16 | 20 | 3 | 47 |
+| Tenant Management 2.0 | Project Creation Pipeline + NS Creation | 0% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tenant Management 2.0 | Knowledge Base | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tenant Management 2.0 | User Role | 80% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tenant Management 2.0 | Member Management | 80% | 38% | 1 | 3 | 1 | 1 | 2 | 8 |
+| Agent Execution | Case1: Simple Agent Execution | 100% | 40% | 1 | 1 | 2 | 3 | 3 | 10 |
+| Agent Execution | Case2: Agent + MCP tool | 100% | 67% | 0 | 1 | 5 | 0 | 0 | 6 |
+| Agent Execution | Case3: Agent + Knowledge base | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Case4: Agent + File input & output | 90% | 20% | 0 | 0 | 1 | 3 | 1 | 5 |
+| Agent Execution | Case5: Natural Language to Agent | 90% | 100% | 0 | 0 | 2 | 0 | 0 | 2 |
+| Agent Execution | Case6: Agent HITL | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Case7: Agent + Memory (both short term + long term) | 20% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Case8: Agent + Skill | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | LLM Gateway 1.0 | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Gateway 2.0 | 50% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Streaming | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Agent Harness Framework | 90% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Workspace | Sources Management | 0% | 88% | 0 | 0 | 1 | 6 | 1 | 8 |
+| Workspace | Session input | 0% | 100% | 0 | 0 | 1 | 3 | 0 | 4 |
+| Agentic Workflow | — | 0% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Monitoring & Evaluation | — | 0% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Feature-to-Test-Case Mapping
 
