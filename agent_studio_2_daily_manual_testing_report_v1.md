@@ -18,9 +18,7 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 | Tenant Management 2.0 | Project Creation Pipeline + NS Creation | 0% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | Knowledge Base | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | User Role | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Skill Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | Member Management | 80% | — | 1 | 3 | 1 | 1 | 2 | 8 |
-| Tenant Management 2.0 | Credential Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Agent Execution | Case1: Simple Agent Execution | 100% | — | 1 | 1 | 2 | 3 | 3 | 10 |
 | Agent Execution | Case2: Agent + MCP tool | 100% | — | 0 | 1 | 5 | 0 | 0 | 6 |
 | Agent Execution | Case3: Agent + Knowledge base | 100% | — | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -106,8 +104,6 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 | Tenant Management 2.0 | Agent | EX-MKT-002 | Discoverable after Space Designer publishes | U-SU-A1 |
 | Tenant Management 2.0 | Agent | EX-MKT-003 | Correct published version opens | U-SU-A1 |
 | Tenant Management 2.0 | Agent | EX-MKT-004 | Unauthorized cross-Space listing absent | U-SU-B |
-| Tenant Management 2.0 | Skill Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Skill Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | Member Management | EX-GOV-011 | Add members/assign roles | U-SO-A |
 | Tenant Management 2.0 | Member Management | EX-GOV-012 | Does not receive 6.3 | U-TO-A |
 | Tenant Management 2.0 | Member Management | EX-GOV-013 | Cannot assign roles | U-SD-A |
@@ -116,10 +112,12 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 | Tenant Management 2.0 | Member Management | EX-GOV-019 | Tenant Member cannot administer tenant | U-TM-A |
 | Tenant Management 2.0 | Member Management | EX-GOV-020 | Existing Tenant Member can be assigned a Space role | U-SO-A |
 | Tenant Management 2.0 | Member Management | EX-GOV-021 | Space membership cannot bypass tenant membership | U-SO-A |
-| Tenant Management 2.0 | Credential Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Credential Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Credential Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | Credential Management | 80% | — | 0 | 0 | 0 | 0 | 0 | 0 |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-009 | Attach approved MCP/skill | U-SD-A |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-010 | Cannot attach MCP/skill | U-SO-A |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-018 | Tool selection and personal access setup persist | U-SD-A |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-019 | Deferred credential setup does not grant usable access | U-SD-A |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-011 | Cannot attach/use | U-SD-A |
+| Agent Execution | Case2: Agent + MCP tool | EX-BLD-012 | Bypass rejected | U-SD-A direct attempt |
 | Agent Execution | Case1: Simple Agent Execution | EX-RUN-001 | Executes successfully | U-SD-A |
 | Agent Execution | Case1: Simple Agent Execution | EX-RUN-002 | Executes successfully | U-SU-A1 |
 | Agent Execution | Case1: Simple Agent Execution | EX-RUN-003 | View but cannot execute | U-TO-A |
