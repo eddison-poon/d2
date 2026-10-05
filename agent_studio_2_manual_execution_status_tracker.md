@@ -13,11 +13,11 @@ Use one of: `PASSED`, `FAILED`, `BLOCKED`, `NOT EXECUTED`.
 
 | Exec ID | Execution Title | Parent MTD | Role | Status | Notes |
 |---|---|---|---|---|---|
-| EX-PAT-001 | Low Risk Pattern exists/identifiable | MTD-PAT-001 | Authorized pattern viewer/admin | NOT EXECUTED |  |
-| EX-PAT-002 | SDLC Pattern exists/identifiable | MTD-PAT-001 | Authorized pattern viewer/admin | NOT EXECUTED |  |
-| EX-PAT-003 | Pattern rule persists/inherits | MTD-PAT-002 | Authorized governance setup | NOT EXECUTED |  |
-| EX-PAT-004 | Pattern rule remains effective | MTD-PAT-002 | Space Designer runtime | NOT EXECUTED |  |
-| EX-GOV-001 | Can enable/disable Pattern | MTD-GOV-001 | U-TO-A | NOT EXECUTED |  |
+| EX-PAT-001 | Low Risk Pattern exists/identifiable | MTD-PAT-001 | Authorized pattern viewer/admin | PASSED |  |
+| EX-PAT-002 | SDLC Pattern exists/identifiable | MTD-PAT-001 | Authorized pattern viewer/admin | PASSED |  |
+| EX-PAT-003 | Pattern rule persists/inherits | MTD-PAT-002 | Authorized governance setup | PASSED |  |
+| EX-PAT-004 | Pattern rule remains effective | MTD-PAT-002 | Space Designer runtime | PASSED |  |
+| EX-GOV-001 | Can enable/disable Pattern | MTD-GOV-001 | U-TO-A | PASSED |  |
 | EX-GOV-002 | Cannot change Pattern enablement | MTD-GOV-001 | U-SO-A | PASSED |  |
 | EX-GOV-003 | Cannot change Pattern enablement | MTD-GOV-001 | U-SD-A | PASSED |  |
 | EX-GOV-004 | Cannot change Pattern enablement | MTD-GOV-001 | U-SU-A1 | PASSED |  |
@@ -32,8 +32,8 @@ Use one of: `PASSED`, `FAILED`, `BLOCKED`, `NOT EXECUTED`.
 | EX-GOV-013 | Cannot assign roles | MTD-GOV-004 | U-SD-A | PASSED |  |
 | EX-GOV-014 | Cannot assign roles | MTD-GOV-004 | U-SU-A1 | PASSED |  |
 | EX-GOV-015 | All 10 required tenants exist | MTD-GOV-005 | Tenant Owner/admin view | NOT EXECUTED |  |
-| EX-GOV-016 | Required default Space exists for each tenant | MTD-GOV-005 | Tenant Owner/admin view | NOT EXECUTED |  |
-| EX-GOV-017 | Required default Space protected | MTD-GOV-005 | Tenant Owner | NOT EXECUTED |  |
+| EX-GOV-016 | Required default Space exists for each tenant | MTD-GOV-005 | Tenant Owner/admin view | PASSED |  |
+| EX-GOV-017 | Required default Space protected | MTD-GOV-005 | Tenant Owner | PASSED |  |
 | EX-GOV-022 | Space prompt saves and persists | MTD-GOV-007 | U-SO-A | NOT EXECUTED |  |
 | EX-GOV-023 | Precedence Pattern > Tenant > Space > Agent enforced | MTD-GOV-007 | U-SD-A | PASSED |  |
 | EX-GOV-018 | Tenant Member can view tenant configuration | MTD-GOV-006 | U-TM-A | NOT EXECUTED |  |
@@ -41,8 +41,8 @@ Use one of: `PASSED`, `FAILED`, `BLOCKED`, `NOT EXECUTED`.
 | EX-GOV-020 | Existing Tenant Member can be assigned a Space role | MTD-GOV-006 | U-SO-A | NOT EXECUTED |  |
 | EX-GOV-021 | Space membership cannot bypass tenant membership | MTD-GOV-006 | U-SO-A | NOT EXECUTED |  |
 | EX-BLD-001 | Creates Agent from enabled Low Risk | MTD-BLD-001 | U-SD-A | PASSED |  |
-| EX-BLD-002 | Cannot create Agent | MTD-BLD-001 | U-TO-A | NOT EXECUTED |  |
-| EX-BLD-003 | Cannot create Agent | MTD-BLD-001 | U-SO-A | NOT EXECUTED |  |
+| EX-BLD-002 | Cannot create Agent | MTD-BLD-001 | U-TO-A | PASSED |  |
+| EX-BLD-003 | Cannot create Agent | MTD-BLD-001 | U-SO-A | PASSED |  |
 | EX-BLD-004 | Cannot create Agent | MTD-BLD-001 | U-SU-A1 | PASSED |  |
 | EX-BLD-013 | Assisted creation starts from supplied idea | MTD-BLD-005 | U-SD-A | PASSED |  |
 | EX-BLD-014 | Focused required setup information collected | MTD-BLD-005 | U-SD-A | PASSED |  |
@@ -50,7 +50,7 @@ Use one of: `PASSED`, `FAILED`, `BLOCKED`, `NOT EXECUTED`.
 | EX-BLD-016 | Required-field validation prevents invalid draft | MTD-BLD-006 | U-SD-A | PASSED |  |
 | EX-BLD-017 | No unintended Agent/draft created | MTD-BLD-007 | U-SD-A | PASSED |  |
 | EX-BLD-005 | Configure Agent | MTD-BLD-002 | U-SD-A | PASSED |  |
-| EX-BLD-006 | Cannot configure | MTD-BLD-002 | U-TO-A | NOT EXECUTED |  |
+| EX-BLD-006 | Cannot configure | MTD-BLD-002 | U-TO-A | PASSED |  |
 | EX-BLD-007 | Cannot configure | MTD-BLD-002 | U-SO-A | PASSED |  |
 | EX-BLD-008 | Cannot configure | MTD-BLD-002 | U-SU-A1 | PASSED |  |
 | EX-BLD-009 | Attach approved MCP/skill | MTD-BLD-003 | U-SD-A | PASSED |  |
@@ -72,12 +72,12 @@ Use one of: `PASSED`, `FAILED`, `BLOCKED`, `NOT EXECUTED`.
 | EX-ACC-011 | Backend rejects edit | MTD-ACC-002 | Unauthorized direct request | NOT EXECUTED |  |
 | EX-RUN-001 | Executes successfully | MTD-RUN-001 | U-SD-A | PASSED |  |
 | EX-RUN-002 | Executes successfully | MTD-RUN-002 | U-SU-A1 | PASSED |  |
-| EX-RUN-003 | View but cannot execute | MTD-RUN-003 | U-TO-A | NOT EXECUTED |  |
-| EX-RUN-004 | View but cannot execute | MTD-RUN-003 | U-SO-A | NOT EXECUTED |  |
+| EX-RUN-003 | View but cannot execute | MTD-RUN-003 | U-TO-A | PASSED |  |
+| EX-RUN-004 | View but cannot execute | MTD-RUN-003 | U-SO-A | PASSED |  |
 | EX-RUN-005 | Platform admin ≠ runtime | MTD-RUN-003 | U-PA | NOT EXECUTED |  |
 | EX-RUN-006 | Service rejects invocation | MTD-RUN-003 | Unauthorized direct request | NOT EXECUTED |  |
 | EX-RUN-007 | Own history visible | MTD-RUN-004 | U-SU-A1 | PASSED |  |
-| EX-RUN-008 | Own history visible | MTD-RUN-004 | U-SD-A | NOT EXECUTED |  |
+| EX-RUN-008 | Own history visible | MTD-RUN-004 | U-SD-A | PASSED |  |
 | EX-RUN-009 | Other history protected | MTD-RUN-004 | U-SU-A2 | PASSED |  |
 | EX-RUN-010 | Object authorization | MTD-RUN-004 | Direct history URL/ID | NOT EXECUTED |  |
 | EX-RUN-011 | Establish context | MTD-RUN-005 | U-SU-A1 | PASSED |  |
