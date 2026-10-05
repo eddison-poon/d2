@@ -1,14 +1,24 @@
 ### scenario 1 - milestone 1 Results
-sept 29, UAT
+sept 30, UAT
 | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---|
-| 500 | 2270 | 0  | | 465.56 | 533.89 |
+| 677 | 1484 | 0  | | 652.81 | 1034.74 |
+
+Oct 2, UAT
+| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---|
+| 500 | 1608 | 0  | | 442.30 | 783.77 |
 
 ### scenario 1 - milestone 2 Results
-sept 29, UAT
+sept 30, UAT
 | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---|
-| 500 | 2270 | 0  | | 465.56 | 533.89 |
+| 677 | 1484 | 0  | | 652.81 | 1034.74 |
+
+Oct 2, UAT
+| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---|
+| 500 | 1608 | 0  | | 442.30 | 783.77 |
 
 ### scenario 2 - milestone 1 Results
 sept 1, SIT
