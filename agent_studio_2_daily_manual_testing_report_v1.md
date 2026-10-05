@@ -8,18 +8,27 @@
 
 Provide a feature-oriented daily view of manual testing aligned with the development team's category and feature list. Development Completion follows the development feature list; Testing Completion is reserved for execution progress of the cases mapped to each feature. This version covers manual testing only.
 
+## Latest Testing Insight and Analysis
+
+- **Overall feature-mapped completion:** 68% (74/109 passed), with 0 failed and 0 blocked executions.
+- **Strongest completed areas:** Natural Language to Agent and Workspace Session Input are at 100%; Workspace Sources Management remains at 88%.
+- **Governance progress improved:** Project Creation is 80% and Space is 56%, including the four Pattern executions counted under Space Owner coverage.
+- **User Role is now explicit coverage:** 8/17 passed (47%), separating role/access validation from general Agent feature coverage.
+- **Runtime progress:** Simple Agent Execution is 70% and Agent + MCP Tool is 67%. Remaining work is concentrated in unexecuted governance/RBAC, negative-access, file/output and member-management paths.
+- **Current quality signal:** no executions are marked FAILED or BLOCKED; remaining completion is driven by NOT EXECUTED coverage rather than recorded test failures.
+
 ## Feature / Role Breakdown
 
 | Category | Feature | Development Completion | Testing Completion | Tenant Owner | Space Owner | Agent Creator | Space User | Other | Total Cases |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tenant Management 2.0 | Project Creation | 100% | 50% | 5 | 2 | 2 | 1 | 0 | 10 |
-| Tenant Management 2.0 | Space | 100% | 11% | 2 | 2 | 1 | 0 | 0 | 5 |
-| Tenant Management 2.0 | Agent | 100% | 64% | 5 | 3 | 16 | 20 | 3 | 47 |
+| Tenant Management 2.0 | Project Creation | 100% | 80% | 5 | 2 | 2 | 1 | 0 | 10 |
+| Tenant Management 2.0 | Space | 100% | 56% | 2 | 6 | 1 | 0 | 0 | 9 |
+| Tenant Management 2.0 | Agent | 100% | 83% | 1 | 1 | 12 | 16 | 0 | 30 |
 | Tenant Management 2.0 | Project Creation Pipeline + NS Creation | 0% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tenant Management 2.0 | Knowledge Base | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tenant Management 2.0 | User Role | 80% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tenant Management 2.0 | User Role | 80% | 47% | 4 | 4 | 2 | 4 | 3 | 17 |
 | Tenant Management 2.0 | Member Management | 80% | 38% | 1 | 3 | 1 | 1 | 2 | 8 |
-| Agent Execution | Case1: Simple Agent Execution | 100% | 40% | 1 | 1 | 2 | 3 | 3 | 10 |
+| Agent Execution | Case1: Simple Agent Execution | 100% | 70% | 1 | 1 | 2 | 3 | 3 | 10 |
 | Agent Execution | Case2: Agent + MCP tool | 100% | 67% | 0 | 1 | 5 | 0 | 0 | 6 |
 | Agent Execution | Case3: Agent + Knowledge base | 100% | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | Agent Execution | Case4: Agent + File input & output | 90% | 20% | 0 | 0 | 1 | 3 | 1 | 5 |
@@ -56,29 +65,29 @@ Provide a feature-oriented daily view of manual testing aligned with the develop
 | Tenant Management 2.0 | Space | EX-GOV-022 | Space prompt saves and persists | U-SO-A |
 | Tenant Management 2.0 | Space | EX-GOV-023 | Precedence Pattern > Tenant > Space > Agent enforced | U-SD-A |
 | Tenant Management 2.0 | Agent | EX-BLD-001 | Creates Agent from enabled Low Risk | U-SD-A |
-| Tenant Management 2.0 | Agent | EX-BLD-002 | Cannot create Agent | U-TO-A |
-| Tenant Management 2.0 | Agent | EX-BLD-003 | Cannot create Agent | U-SO-A |
-| Tenant Management 2.0 | Agent | EX-BLD-004 | Cannot create Agent | U-SU-A1 |
+| Tenant Management 2.0 | User Role | EX-BLD-002 | Cannot create Agent | U-TO-A |
+| Tenant Management 2.0 | User Role | EX-BLD-003 | Cannot create Agent | U-SO-A |
+| Tenant Management 2.0 | User Role | EX-BLD-004 | Cannot create Agent | U-SU-A1 |
 | Agent Execution | Case5: Natural Language to Agent | EX-BLD-013 | Assisted creation starts from supplied idea | U-SD-A |
 | Agent Execution | Case5: Natural Language to Agent | EX-BLD-014 | Focused required setup information collected | U-SD-A |
 | Tenant Management 2.0 | Agent | EX-BLD-015 | One valid draft Agent created | U-SD-A |
 | Tenant Management 2.0 | Agent | EX-BLD-016 | Required-field validation prevents invalid draft | U-SD-A |
 | Tenant Management 2.0 | Agent | EX-BLD-017 | No unintended Agent/draft created | U-SD-A |
 | Tenant Management 2.0 | Agent | EX-BLD-005 | Configure Agent | U-SD-A |
-| Tenant Management 2.0 | Agent | EX-BLD-006 | Cannot configure | U-TO-A |
-| Tenant Management 2.0 | Agent | EX-BLD-007 | Cannot configure | U-SO-A |
-| Tenant Management 2.0 | Agent | EX-BLD-008 | Cannot configure | U-SU-A1 |
-| Tenant Management 2.0 | Agent | EX-ACC-001 | Can view, not edit/run | U-TO-A |
-| Tenant Management 2.0 | Agent | EX-ACC-002 | Can view | U-SO-A |
-| Tenant Management 2.0 | Agent | EX-ACC-003 | Can view | U-SD-A |
-| Tenant Management 2.0 | Agent | EX-ACC-004 | Can view | U-SU-A1 |
-| Tenant Management 2.0 | Agent | EX-ACC-005 | No 6.6 from platform role | U-PA |
-| Tenant Management 2.0 | Agent | EX-ACC-006 | Catalogue access ≠ Agent visibility | U-VR |
-| Tenant Management 2.0 | Agent | EX-ACC-007 | Can edit | U-SD-A |
-| Tenant Management 2.0 | Agent | EX-ACC-008 | Cannot edit | U-TO-A |
-| Tenant Management 2.0 | Agent | EX-ACC-009 | Cannot edit | U-SO-A |
-| Tenant Management 2.0 | Agent | EX-ACC-010 | Cannot edit | U-SU-A1 |
-| Tenant Management 2.0 | Agent | EX-ACC-011 | Backend rejects edit | Unauthorized direct request |
+| Tenant Management 2.0 | User Role | EX-BLD-006 | Cannot configure | U-TO-A |
+| Tenant Management 2.0 | User Role | EX-BLD-007 | Cannot configure | U-SO-A |
+| Tenant Management 2.0 | User Role | EX-BLD-008 | Cannot configure | U-SU-A1 |
+| Tenant Management 2.0 | User Role | EX-ACC-001 | Can view, not edit/run | U-TO-A |
+| Tenant Management 2.0 | User Role | EX-ACC-002 | Can view | U-SO-A |
+| Tenant Management 2.0 | User Role | EX-ACC-003 | Can view | U-SD-A |
+| Tenant Management 2.0 | User Role | EX-ACC-004 | Can view | U-SU-A1 |
+| Tenant Management 2.0 | User Role | EX-ACC-005 | No 6.6 from platform role | U-PA |
+| Tenant Management 2.0 | User Role | EX-ACC-006 | Catalogue access ≠ Agent visibility | U-VR |
+| Tenant Management 2.0 | User Role | EX-ACC-007 | Can edit | U-SD-A |
+| Tenant Management 2.0 | User Role | EX-ACC-008 | Cannot edit | U-TO-A |
+| Tenant Management 2.0 | User Role | EX-ACC-009 | Cannot edit | U-SO-A |
+| Tenant Management 2.0 | User Role | EX-ACC-010 | Cannot edit | U-SU-A1 |
+| Tenant Management 2.0 | User Role | EX-ACC-011 | Backend rejects edit | Unauthorized direct request |
 | Tenant Management 2.0 | Agent | EX-ISO-001 | Same-Space view/run | U-SU-A1 |
 | Tenant Management 2.0 | Agent | EX-ISO-002 | Cross-Space discovery blocked | U-SU-B |
 | Tenant Management 2.0 | Agent | EX-ISO-003 | Direct access rejected | U-SU-B direct URL |
@@ -167,5 +176,5 @@ These executions are intentionally left unmapped. They are reserved for a possib
 3. Keyword similarity alone is not sufficient.
 4. Each execution is mapped once in this first reporting version to avoid double counting.
 5. Features may legitimately have zero mapped executions.
-6. Testing Completion will be calculated from execution status after the feature mapping is agreed.
+6. Testing Completion is calculated from the latest manual execution tracker status.
 7. Automation and performance testing are excluded from this version.
