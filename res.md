@@ -6,10 +6,25 @@ Oct 15, UAT
 
 
 ### scenario 1 - milestone 2 Results
+Oct 14, UAT
+|Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---:|---|
+| 10:35 - 11:05 | 1000 | 1912 | 0  | | 670.16 | 935.42 |
+| 12:20 - 12:50 | 1000 | 1666 | 25  | | 759.30 | 1147.49 |
+| 19:50 - 20:20 | 1000 | 1531 | 0  | | 855.95 | 1178.53 |
+
 Oct 15, UAT
-| concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
-|---:|---:|---:|---:|---:|---|
-| 1000 | 2748 | 0  | | 846.04 | 1010.69 |
+|Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---:|---|
+| 11:25 - 11:55 | 1000 | 1375 | 0  | | 558.28 | 760.75 |
+| 16:27 - 16:57 | 667 | 1967 | 0  | | 473.97 | 722.24 |
+| 19:40 - 20:10 | 1000 | 2017 | 33  | | 680.77 | 963.53 |
+
+Oct 16, UAT
+|Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---:|---|
+| 08:40 - 09:10 | 1000 | 2188 | 0  | | 626.71 | 972.73 |
+
 
 Oct 8, UAT
 | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
