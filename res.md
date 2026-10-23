@@ -5,10 +5,12 @@ Oct 21, UAT
 | 17:53 - 18:23 | 1000 | 5856 | 39  | | 64.57 | 86.45 |
 
 ### scenario 1 - milestone 4 Results
-Oct 22, UAT
+Oct 23, UAT
 |Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---:|---|
-| 03:00 - 03:30 | 1500 | 4980 | 1269  | | 113.45 | 215.64 |
+| 09:35 - 10:05 | 1500 | 8515 | 147  | | 35.42 | 44.95 |
+| 10:45 - 11:15 | 2000 | 10237 | 524  | | 56.36 | 151.53 |
+
 
 ### scenario 2 - milestone 1 Results
 Oct 15, UAT
