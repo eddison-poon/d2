@@ -8,6 +8,12 @@ Oct 23, UAT
 
 ### scenario 2 - milestone 1 Results
 Oct 23, UAT
-| concurrent execution  | num of files | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
 |---:|---:|---:|---:|---:|---:|---|
-| 25 | 10 (15MB)| 43 | 0  | | 713.28 | 1412.37 |
+| 16:07 - 16:47 | 25 | 10 (15MB)| 43 | 0  | | 713.28 | 1412.37 |
+
+Oct 28, UAT
+|Execution Period | concurrent execution  | Pass | failed | passing rate % | avg resp time (sec) | P95 sec |
+|---:|---:|---:|---:|---:|---:|---|
+| 08:48 - 09:38 | 25 | 10 (15MB)| 88 | 8  | | 247.50 | 445.45 |
+| 14:17 - 14:57 | 25 | 10 (15MB)| 84 | 16  | | 168.38 | 338.66 |
